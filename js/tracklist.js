@@ -7,7 +7,7 @@ Array.prototype.each = function (fn) { $.each(this, fn); }
 
 var DDA = {
 	site: "http://drdraardvark.com/",
-	path: "http://alphajuliet.com/music/",
+	path: "http://alphajuliet.com/music/dda/",
 	sets: [
 			{
 				artist: "dr dr aardvark",
