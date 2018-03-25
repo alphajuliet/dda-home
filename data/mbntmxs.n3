@@ -1,0 +1,45 @@
+# RDF/N3 metadata
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix trk: <http://drdraardvark.com/data/track#> .
+@prefix ajppl: <http://alphajuliet.com/ns/people#> .
+@prefix dda: <http://drdraardvark.com/data/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+<> a foaf:Document ;
+	dc:title "mbnt mxs" ;
+	dc:description "RDF metadata for <mbnt mxs> using the Music Ontology Specification." ;
+	dc:language "en" ;
+	foaf:maker ajppl:AndrewJ ;
+	dc:created "2007-07-26" ;
+	rdfs:seeAlso <http://purl.org/ontology/mo/> .
+dda:a0bbd5e5 a mo:Record ;
+	dc:title "mbnt mxs" ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:ReleaseStatus mo:Official ;
+	mo:has_track trk:1b16cf5f ;
+	mo:has_track trk:a7ea0df8 ;
+	mo:has_track trk:18a70971 ;
+	rdfs:seeAlso <http://drdraardvark.com/data/DrDrAardvark.n3> ;
+	mo:ReleaseType mo:Album .
+trk:1b16cf5f a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "A is for Ankara" ;
+	mo:trackNum "1" ;
+	dc:created "2006" ;
+	foaf:maker dda:DrDrAardvark .
+trk:a7ea0df8 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "B is for Berlin" ;
+	mo:trackNum "2" ;
+	dc:created "2006" ;
+	foaf:maker dda:DrDrAardvark .
+trk:18a70971 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "C is for Copenhagen" ;
+	mo:trackNum "3" ;
+	dc:created "2007" ;
+	foaf:maker dda:DrDrAardvark .
+# The End

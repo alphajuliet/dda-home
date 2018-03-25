@@ -1,0 +1,130 @@
+# Palmistry2 metadata
+# AndrewJ/Dr Dr Aardvark
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+
+@prefix ajppl: <http://alphajuliet.com/ns/people#> .
+@prefix dda: <http://drdraardvark.com/ns/> .
+@prefix trk: <http://drdraardvark.com/ns/track#> .
+
+#--------------------
+
+# Describe this document
+<> a foaf:Document ;
+	dc:title "DrDrAardvark: Palmistry 2" ;
+	dc:description "Metadata about the Dr Dr Aardvark Palmistry 2 album." ;
+	dct:modified "2007-03-23"^^xsd:date ;
+	foaf:maker ajppl:AndrewJ ;
+	foaf:primaryTopic dda:palmistry2 ;
+	dc:language "en" .
+
+#--------------------
+
+dda:palmistry2
+	a mo:Record ;
+	mo:title "palmistry 2" ;
+	dc:creator dda:DrDrAardvark ;
+	dct:created "2005"^^xsd:date ;
+	mo:ReleaseType mo:Album ;
+	mo:ReleaseStatus mo:Official ;
+	mo:has_track trk:292611 ;
+	mo:has_track trk:799615 ;
+	mo:has_track trk:932248 ; 
+	mo:has_track trk:661000 ;
+	mo:has_track trk:198522 ;
+	mo:has_track trk:633625 ; 
+	mo:has_track trk:689535 ; 
+	mo:has_track trk:744132 ; 
+	mo:has_track trk:240943 ; 
+	mo:has_track trk:694265 ; 
+	mo:has_track trk:409680 .
+
+#--------------------
+trk:292611 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/depart.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "1" ;
+	dc:title "depart" .
+	
+trk:799615 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/dort.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "2" ;
+	dc:title "dort" .
+
+trk:932248 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/chilt.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "3" ;
+	dc:title "chilt" .
+	
+trk:661000 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/puck.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "4" ;
+	dc:title "puck" .
+	
+trk:198522 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/aptect.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "5" ;
+	dc:title "aptect" .
+	
+trk:633625 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/alard.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "6" ;
+	dc:title "alard" .
+	
+trk:689535 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/kerk.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "7" ;
+	dc:title "kerk" .
+	
+trk:744132 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/socka.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "8" ;
+	dc:title "socka" .
+	
+trk:240943 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/twis.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "9" ;
+	dc:title "twis" .
+	
+trk:694265 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/racko.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "10" ;
+	dc:title "racko" .
+	
+trk:409680 a mo:Track ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:availableAs [ a mo:Stream ; mo:stream_url <http://alphajuliet.com/music/loam.mp3> ] ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	mo:trackNum "11" ;
+	dc:title "loam" .
+
+# The End

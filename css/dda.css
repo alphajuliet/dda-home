@@ -1,0 +1,85 @@
+/*
+ * dda.css
+ */
+
+body {
+	font-family: Gill Sans, Futura, Tahoma, sans-serif;
+	font-size: 12pt;
+	color: #cccccc;
+	background-color: #111111;
+	margin: 1cm 10% 2cm 20%;
+	width: 60%;
+	padding: 10px;
+}
+
+#header {
+
+}
+
+#container {
+
+}
+
+.license {
+	width: 50%;
+	margin-top: 2em;
+	background-color: #111;
+}
+
+#footer {
+	font-size: 80%;
+	border-top: solid 1px #222222;
+}
+
+#container h1 {
+	font-size: 120%;
+}
+
+div#tracklist {
+	color: #99f;
+	margin-left: 50px;
+}	
+
+div.set_header {
+	border-left: 10px solid #333;
+	padding-left: 0.5em;
+}
+
+div.set_body {
+	width: 75%;
+	background-color: #222;
+	padding: 10px;
+}
+
+div.set_body a {
+	padding: 2px 2px 2px 0.5em;
+	border-left: 10px solid #333;
+}
+
+div.set_body a:hover
+{
+	border-left: 10px solid #666;
+	color: #fff;
+}
+
+img.artwork {
+	float: right;
+	margin: 5px;	
+}
+
+a.button {
+	font-size: 80%;
+	color: #666
+}
+
+.small {
+	font-size: 85%;
+}
+
+span.small a:hover {
+	color: #ccc;	
+}
+
+a { color: #ccc; }
+
+/* The End */

@@ -1,0 +1,66 @@
+# RDF/N3 metadata
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix trk: <http://drdraardvark.com/data/track#> .
+@prefix ajppl: <http://alphajuliet.com/ns/people#> .
+@prefix dda: <http://drdraardvark.com/data/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+<> a foaf:Document ;
+	dc:title "Soundbite" ;
+	dc:description "RDF metadata for <Soundbite> using the Music Ontology Specification." ;
+	dc:language "en" ;
+	foaf:maker ajppl:AndrewJ ;
+	dc:created "2007-07-26" ;
+	rdfs:seeAlso <http://purl.org/ontology/mo/> .
+dda:8a63eb0b a mo:Record ;
+	dc:title "Soundbite" ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:ReleaseStatus mo:Official ;
+	mo:has_track trk:09abeeac ;
+	mo:has_track trk:86d75711 ;
+	mo:has_track trk:740922ac ;
+	mo:has_track trk:e9dfbb33 ;
+	mo:has_track trk:eec473e2 ;
+	mo:has_track trk:d24070e0 ;
+	rdfs:seeAlso <http://drdraardvark.com/data/DrDrAardvark.n3> ;
+	mo:ReleaseType mo:Album .
+trk:09abeeac a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Asian Seas" ;
+	mo:trackNum "1" ;
+	dc:created "2001" ;
+	foaf:maker dda:DrDrAardvark .
+trk:86d75711 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Cehuda" ;
+	mo:trackNum "2" ;
+	dc:created "2001" ;
+	foaf:maker dda:DrDrAardvark .
+trk:740922ac a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Multiple" ;
+	mo:trackNum "3" ;
+	dc:created "2001" ;
+	foaf:maker dda:DrDrAardvark .
+trk:e9dfbb33 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Parasite" ;
+	mo:trackNum "4" ;
+	dc:created "2001" ;
+	foaf:maker dda:DrDrAardvark .
+trk:eec473e2 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Reality Network" ;
+	mo:trackNum "5" ;
+	dc:created "2001" ;
+	foaf:maker dda:DrDrAardvark .
+trk:d24070e0 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Skin Shirt" ;
+	mo:trackNum "6" ;
+	dc:created "2001" ;
+	foaf:maker dda:DrDrAardvark .
+# The End

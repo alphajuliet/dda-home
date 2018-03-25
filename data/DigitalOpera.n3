@@ -1,0 +1,143 @@
+# RDF/N3 metadata
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix trk: <http://drdraardvark.com/data/track#> .
+@prefix ajppl: <http://alphajuliet.com/ns/people#> .
+@prefix dda: <http://drdraardvark.com/data/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+<> a foaf:Document ;
+	dc:title "Digital Opera" ;
+	dc:description "RDF metadata for <Digital Opera> using the Music Ontology Specification." ;
+	dc:language "en" ;
+	foaf:maker ajppl:AndrewJ ;
+	dc:created "2007-07-26" ;
+	rdfs:seeAlso <http://purl.org/ontology/mo/> .
+dda:8417729e a mo:Record ;
+	dc:title "Digital Opera" ;
+	foaf:maker dda:DrDrAardvark ;
+	mo:ReleaseStatus mo:Official ;
+	mo:has_track trk:a4bab1b3 ;
+	mo:has_track trk:cff81121 ;
+	mo:has_track trk:dcbcab3e ;
+	mo:has_track trk:4dcf4556 ;
+	mo:has_track trk:10232740 ;
+	mo:has_track trk:0f81b9d8 ;
+	mo:has_track trk:7193b15c ;
+	mo:has_track trk:d24d5c46 ;
+	mo:has_track trk:4a6e1bbf ;
+	mo:has_track trk:91f559c7 ;
+	mo:has_track trk:72c4e5a4 ;
+	mo:has_track trk:38399965 ;
+	mo:has_track trk:21adab03 ;
+	mo:has_track trk:12f77393 ;
+	mo:has_track trk:7db60f82 ;
+	mo:has_track trk:6e7f9d23 ;
+	mo:has_track trk:62bb2cdb ;
+	rdfs:seeAlso <http://drdraardvark.com/data/DrDrAardvark.n3> ;
+	mo:ReleaseType mo:Album .
+trk:a4bab1b3 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Subsonic" ;
+	mo:trackNum "1" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:cff81121 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Dream Garden" ;
+	mo:trackNum "2" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:dcbcab3e a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "At the End of the Day/Nightlife" ;
+	mo:trackNum "3" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:4dcf4556 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Kinetic Drift" ;
+	mo:trackNum "4" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:10232740 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "A Hundred Indecisions" ;
+	mo:trackNum "5" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:0f81b9d8 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Unnatural Vices" ;
+	mo:trackNum "6" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:7193b15c a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Callisto's Child" ;
+	mo:trackNum "7" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:d24d5c46 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Urban Lament" ;
+	mo:trackNum "8" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:4a6e1bbf a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "ShiftingTheCandles" ;
+	mo:trackNum "9" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:91f559c7 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Condensation" ;
+	mo:trackNum "10" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:72c4e5a4 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Crystal Shower" ;
+	mo:trackNum "11" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:38399965 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "The Last Dance" ;
+	mo:trackNum "12" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:21adab03 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Troposphere" ;
+	mo:trackNum "13" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:12f77393 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Stone Images" ;
+	mo:trackNum "14" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:7db60f82 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Subsonic2" ;
+	mo:trackNum "15" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:6e7f9d23 a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Repercussion" ;
+	mo:trackNum "16" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+trk:62bb2cdb a mo:Track ;
+	dc:licence <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+	dc:title "Remnants" ;
+	mo:trackNum "17" ;
+	dc:created "1987" ;
+	foaf:maker dda:DrDrAardvark .
+# The End
