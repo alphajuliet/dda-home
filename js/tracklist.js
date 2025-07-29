@@ -6,8 +6,9 @@
 Array.prototype.each = function (fn) { $.each(this, fn); }
 
 var DDA = {
-	site: "http://drdraardvark.com/",
-	path: "http://alphajuliet.com/music/dda/",
+	site: "https://drdraardvark.glitch.me/",
+	path: "https://drdraardvark.glitch.me/",
+  mp3dir: "https://s3-ap-southeast-2.amazonaws.com/alphajuliet-s3-mp3/drdraardvark/",
 	sets: [
 			{
 				artist: "dr dr aardvark",
@@ -87,7 +88,7 @@ function Set(aSet) {
 	this.attachTo = function (target) {
 		target.append(createHeader(aSet));
 		
-		var container = $($.create("div", { "class": "set_body" }, []));		
+		var container = $(`<div class="set_body"></div>`);		
 		container.append(createArtwork(aSet));
 
 		var tracks = new TrackList(aSet.tracks);
@@ -100,31 +101,32 @@ function Set(aSet) {
 
 	// private methods
 	var createHeader = function (aSet) {
-		if (!aSet) return;
-		var heading = $.create("p", {}, [ aSet.artist + ": " + aSet.title + "  "]);
-		var header = $.create("div", { "class": "set_header" }, [ heading ]);
-		return $(header);
+		if (!aSet) return
+		var heading = $(`<p>${aSet.artist}: ${aSet.title}</p>`)
+		var header = $(`<div class="set_header"></div>`)
+    header.append(heading)
+		return header;
 	}
 	
 	var createArtwork = function (aSet) {
 		if (!aSet) return;
 		if (aSet.artwork != null) {
-			var artwork = $.create("img", { "src": aSet.artwork, "alt": aSet.title, 
-				"height": "150", "width": "150", "class": "artwork" }, []);
-			return $(artwork);
+			var artwork = $(`<img src="${aSet.artwork}" alt=${aSet.title} height="150" width="150" class="artwork"/>`);
+			return artwork
 		}
 		else
 			return null;
 	}
 	
 	var createMetadata = function (aSet) {
-		if (!aSet) return;
+		if (!aSet) return
 		if (aSet.metadata != null) {
-			var rdf_link = $.create("a", { "href": aSet.metadata }, [ "[rdf+n3]" ]);
-			var metadata = $.create("p", { "class": "small" }, [rdf_link]);
-			return $(metadata);
+			var rdf_link = $(`<a href=${aSet.metadata}>[rdf+n3]</a>`)
+			var metadata = $(`<p class="small"></p>`)
+      metadata.append(rdf_link)
+			return metadata
 		}
-		return null;
+		return null
 	}
 }
 
@@ -134,10 +136,10 @@ function TrackList(anArray) {
 	this.trackNames = anArray || [];
 	
 	this.attachTo = function (target) {
-		var container = $($.create("ol", {"class": "track_list"}, []));
+		var container = $('<ol class="track_list"></ol>')
 		this.trackNames.each(function (i, name) {
-			var track = new Track(name);
-			track.attachTo(container);
+			var track = new Track(name)
+			track.attachTo(container)
 		});
 		target.append(container);
 	}
@@ -149,12 +151,14 @@ function Track(aName) {
 	this.name = aName || "untitled";
 
 	this.attachTo = function (target) {
-		var trackUrl = DDA.path + this.name + ".mp3";
-		var a = $.create("a", { "href": trackUrl, "target": "_blank" }, [ this.name ]);
+		var trackUrl = `${DDA.mp3dir}${this.name}.mp3`;
+		var a = $(`<a href="${trackUrl}" target="_blank">${this.name}</a>`);
 
-		var img = $.create("img", { "style": "border:0; vertical-align: middle;", "title": "play-button", "src": "http://googlepage.googlepages.com/play.gif" }, []);
-		var player = $.create("a", { "href": trackUrl }, [img] );
-		var container = $($.create("li", {}, [a]));
+		var img = $(`<img style="border:0; vertical-align: middle;" title="play-button" src="http://googlepage.googlepages.com/play.gif/>`)
+		var player = $(`<a href="${trackUrl}"></a>`)
+    player.append(img)
+		var container = $('<li></li>')
+    container.append(a)
 		target.append(container);
 	}
 }
